@@ -1,6 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
 .nav-container {
     position: relative;
-    /* position: ; */
     background: linear-gradient(0deg, rgb(56, 59, 59) 20%, rgb(236, 135, 236) 100%);
     width: 100%;
     height: 80px;
@@ -13,7 +17,8 @@
 }
 
 .nav-container{
-    font-size: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
     font-weight: 500;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }

@@ -5,12 +5,12 @@ import SkillsContent from './Components/Skills';
 import ExperienceContent from './Components/ExperienceContent';
 import ContactContent from './Components/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './Components/Header'; // Move Header here
+// import Header from './Components/Header';
 
 function App() {
   return (
     <Router>
-      <Header />
+      {/* <Header /> */}
       <div className="container mx-auto p-4">
         <Routes>
           <Route path="/" element={<HomePage />} />

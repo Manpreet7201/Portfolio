@@ -1,11 +1,15 @@
 import React from 'react';
-// import '../CSS/SkillsSection.css';
+import '../CSS/Skills.css';
 
 function SkillsSection() {
+  console.log("SkillsSection is rendered");
   return (
     <section id='skills' className="skills-section">
       <h2>Skills</h2>
-      <p>Details about your skills.</p>
+      <div className='line'></div>
+      <section>
+
+      </section>
     </section>
   );
 }
