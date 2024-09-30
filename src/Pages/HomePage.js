@@ -1,20 +1,29 @@
-import React from 'react';
+// import React, { useEffect, useState } from 'react';
 import '../CSS/HomePage.css';
-
-
+import 'animate.css';
 import About from '../Components/About';
 import Skills from '../Components/Skills';
 // import ExperienceContent from '../Components/ExperienceContent';
-// import Contact from '../Components/Contact';
+import Contact from '../Components/Contact';
 import Header from '../Components/Header'
 // import heroImage from '../Assets/BIMage2.jpg'; 
 // import image from '../Assets/emoji.jpg'
 
 function HomePage() {
+  // const [animate , setAnimate] = useState(false);
+  // useEffect(() => {
+  //   const timer = setTimeout(()=>{
+  //     setAnimate(true);
+  //   },5000);
+
+  //   return () => clearTimeout(timer);
+  // },[]);
   return (
     <>
       <div className="home-container">
       <Header />
+      {/* <div  class="animate__animated animate__bounce dream"> Dream  Big</div> */}
+      <div  class="dream"> Dream  Big</div>
         <section className="content-section">
         <h1> Hey Everyone! &#128075; </h1>
         {/* <h1> Hey Everyone! {'\u2728'} </h1> */}
@@ -36,11 +45,11 @@ function HomePage() {
       
       {/* <div className="experience-section">
         <ExperienceContent />
-      </div>
-      
-      <div className="contact-section">
-        <Contact />
       </div> */}
+      
+      <div>
+        <Contact />
+      </div>
     </>
   );
 }

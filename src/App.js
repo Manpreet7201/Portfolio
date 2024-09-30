@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       {/* <Header /> */}
-      <div className="container mx-auto p-4">
+      <div id="container">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutContent />} />
@@ -25,5 +25,3 @@ function App() {
 }
 
 export default App;
-
-

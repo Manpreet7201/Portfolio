@@ -1,24 +1,34 @@
+.Flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+    margin-bottom: 120px;
+}
 .about-section {
     font-family:'Times New Roman', Times, serif;
     width: 100%;
-    height: 500px;
+    height: 450px;
+    /* height: auto; */
+    max-height: auto;
     background-color: #ddd;
     padding: 20px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-bottom: 100px; */
+    /* margin-bottom: 500px; */
 }
+
 .about-section h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
-.line {
+.about-section .line {
     border-bottom: 2px solid #c5bfbf;
     width: 18%;
-    margin-left: 80px;
-    margin-bottom: 10px;
+    margin-left: 100px;
+    /* margin-bottom: 10px; */
 } 
 
 .about-content {
@@ -84,7 +94,7 @@
 .education-section {
     font-family:'Times New Roman', Times, serif;
     width: 100%;
-    height: auto;
+    height: 500px;
     background-color: #e8f0e5;
     padding: 20px 20px;
     text-align: center;
@@ -100,20 +110,26 @@
     font-size: 2.5rem;
     /* margin-bottom: 10px; */
 }
-.line{
+.education-section .line{
     border-bottom: 2px solid #c5bfbf;
     width: 20%;
-    margin-left: 60px;
-    /* margin-bottom: 20px; */
+    margin-left: 70px;
+    margin-bottom: 10px;
 } 
 
 .education-content {
     margin-top: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 100px;
     flex-wrap: wrap; 
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px; 
+    flex-wrap: wrap;  */
 }
   
 .education-image img {
@@ -121,7 +137,7 @@
     height: 200px;
     object-fit: cover;
     border-radius: 5%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
     /* border: 1px solid rgb(175, 173, 173); */
 }
   
@@ -162,3 +178,176 @@
     color: #6d6b6b;
 }
 
+@media (max-width: 768px) {
+    .Flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content{
+        flex-direction: column; 
+        gap: 20px; 
+        height: auto;
+        padding: 22px 22px;
+    }
+    .education-content {
+        flex-direction: column; 
+        gap: 20px; 
+        padding: 22px 22px;
+    }
+
+    /* .about-image img, .education-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-text, .education-text {
+        text-align: center;
+        max-width: 100%; 
+    }
+
+    .about-text h3, .education-text h3 {
+        font-size: 1.4rem;
+    }
+
+    .about-text p, .education-text p {
+        font-size: 0.9rem;
+    }
+
+    .download-btn {
+        font-size: 0.9rem;
+    }
+
+    .line, .line1 {
+        width: 80%; 
+    } */
+}
+
+
+
+
+/* .about-section, .education-section {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section {
+    height: auto; 
+    background-color: #ddd;
+}
+
+.about-content, .education-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+    flex-wrap: wrap; 
+}
+
+
+.about-section h2, .education-section h2 {
+    font-size: 2rem;
+}
+
+
+.line, .line1 {
+    border-bottom: 2px solid #c5bfbf;
+    width: 50%; 
+    margin: 0 auto 10px;
+}
+
+
+.about-image img, .education-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text, .education-text {
+    text-align: left;
+    max-width: 90%; 
+    margin-left: 0; 
+}
+
+.about-text h3, .education-text h3 {
+    font-size: 1.6rem;
+    color: #494747;
+}
+
+.about-text p, .education-text p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #818080;
+}
+
+
+.download-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #6e2762;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    background-color: #4e0943;
+}
+
+
+@media (max-width: 768px) {
+    .about-content, .education-content {
+        flex-direction: row; 
+        gap: 20px; 
+    }
+
+    .about-image img, .education-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-text, .education-text {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .about-text h3, .education-text h3 {
+        font-size: 1.4rem;
+    }
+
+    .about-text p, .education-text p {
+        font-size: 0.9rem;
+    }
+
+    .download-btn {
+        font-size: 0.9rem;
+    }
+
+    .line, .line1 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-image img, .education-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-text h3, .education-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-text p, .education-text p {
+        font-size: 0.8rem;
+    }
+
+    .download-btn {
+        font-size: 0.8rem;
+    }
+} */
