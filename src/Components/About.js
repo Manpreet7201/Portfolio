@@ -1,14 +1,14 @@
 import React from 'react';
 import '../CSS/About.css'; 
 import myImage from "../Assets/Preet.jpg"
-import myUni from '../Assets/university.jpg'
+// import myUni from '../Assets/university.jpg'
 import myCV from '../Assets/Resume.pdf.pdf'
 
 function About() {
   return (
-    <section className='Flex'>
+    <section id='about' className='Flex'>
 
-    <section id='about' className="about-section">
+    <section className="about-section">
       <h2>About Me</h2>
       {/* <div className='line'></div> */}
       <div className="about-content">
@@ -21,7 +21,7 @@ function About() {
           I am currently pursuing a Bachelor's degree in Computer Science and Engineering at ACET. 
           As a passionate developer, I have a strong interest in web development and enjoy creating modern, 
           responsive websites. My skills span across HTML, CSS, JavaScript, and React, and 
-          I’m always eager to learn and explore new technologies. 
+          I'm always eager to learn and explore new technologies. 
           I thrive on solving complex problems and bringing creative ideas to life. Beyond coding, 
           I have a love for gardening, cooking, painting, and listening to music, 
           which help fuel my creativity and passion for life.
@@ -44,23 +44,26 @@ function About() {
       <div className="education-content">
       
       <div className="education-text">
-        <h3><span>Currently - </span>Higher Education</h3>
+      <div>
+      <h3><span>Currently - </span>Higher Education</h3>
         <p>Bachelor of Technology (B.Tech) in Computer Science and Engineering</p>
         <p>Eternal University - Akal College of Engineering and Technology</p>
         <p> <span  className="location">Location - </span>Baru Sahib, Sirmaur (Himachal Pradesh)</p>
         <p>Expected Graduation: 2025</p>
+      </div>
 
-        <div className='line1'></div>
-
-        <h3>Secondary Education</h3>
+        {/* <div className='line1'></div> */}
+       <div>
+       <h3>Secondary Education</h3>
         <p>Ajit Public Senior Secondary School (XII), PCM Stream</p>
         <p><span  className="location">Location - </span>Tijara, Alwar (Rajasthan)</p>
         <p>Graduated: 2021</p>
+       </div>
       </div>
 
-      <div className="education-image">
+      {/* <div className="education-image">
         <img src={myUni} alt="Eternal University" />
-      </div>
+      </div> */}
       </div>
     </section>
 

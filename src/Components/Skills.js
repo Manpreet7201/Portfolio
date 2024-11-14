@@ -9,7 +9,7 @@ function SkillsSection() {
     { name: 'JavaScript', iconPath: require('../Assets/JS.png') },
     { name: 'React', iconPath: require('../Assets/REACT.jpg') },
     { name: 'Figma', iconPath: require('../Assets/FIGMA.jpg') },
-    { name: 'GitHub', iconPath: require('../Assets/git-hub.png') },
+    { name: 'Git', iconPath: require('../Assets/git.png') },
   ];
 
   return (
