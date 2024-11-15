@@ -2,7 +2,8 @@ import React from 'react';
 import '../CSS/About.css'; 
 import myImage from "../Assets/Preet.jpg"
 // import myUni from '../Assets/university.jpg'
-import myCV from '../Assets/Resume.pdf.pdf'
+// import myCV from '../Assets/Resume.pdf.pdf'
+import myCV from '../Assets/MANPREETKAUR_Resume.pdf'
 
 function About() {
   return (

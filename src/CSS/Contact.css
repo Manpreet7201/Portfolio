@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .contact-container{ 
   font-family:'Times New Roman', Times, serif;
   width: 100%;
@@ -11,7 +15,7 @@
   height: auto;
   background-color: #f5f1f1;
   margin: 0 auto; 
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   color: rgb(43, 41, 41);
   text-align: center;
 }
@@ -25,14 +29,6 @@
 }
 
 /*      ##########  Animation on h2 text  #########  */
-/* .animate__slideInLeft {
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-delay: 0s;
-} */
-
-
 .Links-container {
   margin-top: 20px;
   padding: 10px 10px;
@@ -105,4 +101,71 @@
   font-size: 1.2rem;
   font-weight: 600;
   color: rgb(70, 70, 70);
+}
+
+
+
+@media (max-width: 768px) {
+  .contact-container h2 {
+    font-size: 2rem;
+  }
+
+  .Links-container {
+    gap: 20px;
+  }
+
+  .link {
+    width: 70px;
+  }
+
+  .link-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .link-name {
+    font-size: 0.9rem;
+  }
+
+  .call-email {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .call-email-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .call-email-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .link {
+    width: 60px;
+  }
+
+  .link-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .link-name {
+    font-size: 0.8rem;
+  }
+
+  .call-email-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .call-email-text {
+    font-size: 0.9rem;
+  }
 }
